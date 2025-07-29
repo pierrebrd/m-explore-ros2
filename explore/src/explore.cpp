@@ -346,6 +346,7 @@ namespace explore
         auto send_goal_options =
             rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SendGoalOptions();
         move_base_client_->async_send_goal(goal, send_goal_options);
+        RCLCPP_INFO(this->get_logger(), "Goal sent to return to initial pose, Quitting");
     }
 
     bool Explore::goalOnBlacklist(const geometry_msgs::msg::Point& goal) {
