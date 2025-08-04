@@ -426,7 +426,6 @@ namespace explore
             // We return to the initial pose
             returnToInitialPose();
             // We shut down the node
-            // TODO : add a timer / wait for the initial pose to be reached
             RCLCPP_INFO(this->get_logger(), "Shutting down the explore node.");
             rclcpp::shutdown();
         }
