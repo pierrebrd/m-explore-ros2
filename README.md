@@ -11,11 +11,17 @@ Changes:
 - Edited the default explore params
 - Fixed some headers to avoid warnings.
 - Fixed the initialization of the frontier size (see [prina404's repo](https://github.com/prina404/m-explore/commit/4d2e9f34c0fc01d90cb81fbe51545fff22f9d0c9))
+- Replaced the custom named loggers with node's logger so that the logs are included in /rosout. (a PR later included that in the original repo)
+- Generally improved the logs so that they can be used more easily in the benchmarking suite.
+
+
+## Original repo README
 
 ROS2 package port for multi-robot autonomous exploration of [m-explore](https://github.com/hrnr/m-explore). Currently tested on Eloquent, Dashing, Foxy, and Galactic distros.
 
 ### Contents
 - [Fork status:](#fork-status)
+- [Original repo README](#original-repo-readme)
   - [Contents](#contents)
 - [Autonomous exploration](#autonomous-exploration)
   - [Simulation with a TB3 robot](#simulation-with-a-tb3-robot)
